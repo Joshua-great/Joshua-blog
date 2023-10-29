@@ -1,5 +1,5 @@
 const Blog = require('../models/Blog');
-const User = require('../models/user');
+const User = require('../models/User');
 
 
 const createBlog = async (req, res) => {
