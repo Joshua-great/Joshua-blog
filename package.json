@@ -1,0 +1,43 @@
+{
+  "name": "joshuagreat_blog",
+  "version": "1.0.0",
+  "description": "a blog for all",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "test2": "chai",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshua-great/Joshuagreat_blog.git"
+  },
+  "author": "Joshua Great Olatokun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshua-great/Joshuagreat_blog/issues"
+  },
+  "homepage": "https://github.com/Joshua-great/Joshuagreat_blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.6.3",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.6",
+    "nodemon": "^3.0.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "winston": "^3.11.0"
+  }
+}

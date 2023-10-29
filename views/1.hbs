@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Joshuagreat_blog</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                       <li><a href="/">Home</a></li>
+                     <li><a href="/blogs/published">Published Blogs</a></li>
+            <li><a href="/blogs/user">My Blogs</a></li>
+                    <a class="nav-link" href="#user-profile">User Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog-list">Blog List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- User Profile Section -->
+      
+
+        <!-- Blog List Section -->
+        <section id="blog-list">
+            <h2>Blog List</h2>
+            <ul class="list-group">
+                <!-- Display a list of blogs here -->
+                <li class="list-group-item">
+                    Blog Title 1
+                    <button class="btn btn-danger float-right" onclick="deleteBlog(1)">Delete</button>
+                    <button class="btn btn-primary float-right mr-2" onclick="editBlog(1)">Edit</button>
+                </li>
+                <li class="list-group-item">
+                    Blog Title 2
+                    <button class="btn btn-danger float-right" onclick="deleteBlog(2)">Delete</button>
+                    <button class="btn btn-primary float-right mr-2" onclick="editBlog(2)">Edit</button>
+                </li>
+            </ul>
+            <button class="btn btn-success mt-2" id="create-blog-button">Create Blog</button>
+        </section>
+    </div>
+
+   <script src="/src/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+
+</body>
+</html>
+  <section id="user-profile">
+            <h2>User Profile</h2>
+           <p>Welcome, {{userData.firstname}} {{userData.lastname}}</p>
+        </section>
